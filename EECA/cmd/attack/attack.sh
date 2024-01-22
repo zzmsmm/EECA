@@ -1,0 +1,6 @@
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method fine-tune --lr 0.0001 --K 10 --coding Full-Entropy --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Full-Entropy --cuda cuda:1
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method fine-tune --lr 0.0001 --K 10 --coding Tardos-1 --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Tardos-1 --cuda cuda:1
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method fine-tune --lr 0.0001 --K 10 --coding Tardos-2 --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Tardos-2 --cuda cuda:1
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method pruning --K 10 --coding Full-Entropy --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Full-Entropy --cuda cuda:1
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method pruning --K 10 --coding Tardos-1 --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Tardos-1 --cuda cuda:1
+python attack.py --dataset cifar10 --num_classes 10 --arch resnet34 --attack_method pruning --K 10 --coding Tardos-2 --wm_method noise --runname cifar10_resnet34_noise_C10_K10_Tardos-2 --cuda cuda:1
